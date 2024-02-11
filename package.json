@@ -55,6 +55,7 @@
 		]
 	},
 	"dependencies": {
+		"axios": "^1.6.7",
 		"gulp-uglify-es": "^2.0.0",
 		"posthtml-remove-attributes": "^1.0.0",
 		"posthtml-richtypo": "^1.0.2",
