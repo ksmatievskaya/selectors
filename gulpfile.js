@@ -77,13 +77,13 @@ const arg = ((argList) => {
   return arg;
 })(process.argv);
 
-/**
- * Очистка папки dist перед сборкой
- * @returns {Promise<string[]> | *}
- */
-function clean() {
-  return del([paths.dist]);
-}
+// /**
+//  * Очистка папки dist перед сборкой
+//  * @returns {Promise<string[]> | *}
+//  */
+// function clean() {
+//   return del([paths.dist]);
+// }
 
 /**
  * Инициализация веб-сервера browserSync
@@ -302,7 +302,6 @@ function watchFiles() {
 }
 
 const build = gulp.series(
-  clean,
   gulp.parallel(
     SVGProcess,
     htmlProcess,
